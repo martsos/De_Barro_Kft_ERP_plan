@@ -1,4 +1,4 @@
--------------------------------------ÜZEMANYAG TRIGGEREK---------------------------------------------
+-- UZEMANYAG TRIGGEREK
 -- ua_fact_keszlet_kiadas VALIDÁCIÓ
 
 DELIMITER $$
@@ -263,6 +263,3 @@ BEGIN
 END$$
 
 DELIMITER ;
-
-
--------------------------------------HUMÁN(HR) TRIGGEREK---------------------------------------------

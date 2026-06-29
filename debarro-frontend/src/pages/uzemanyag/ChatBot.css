@@ -1,0 +1,198 @@
+/* ChatBot.css */
+
+.cb-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #1a1a2e;
+  border-left: 1px solid #2d2d4e;
+  border-radius: 0 12px 12px 0;
+  overflow: hidden;
+}
+
+/* HEADER */
+.cb-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  background: #16213e;
+  border-bottom: 1px solid #2d2d4e;
+}
+
+.cb-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fa8c16;
+  display: inline-block;
+}
+
+.cb-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+}
+
+/* ÜZENETEK */
+.cb-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cb-messages::-webkit-scrollbar {
+  width: 4px;
+}
+.cb-messages::-webkit-scrollbar-thumb {
+  background: #2d2d4e;
+  border-radius: 4px;
+}
+
+.cb-msg {
+  display: flex;
+}
+
+.cb-msg--bot {
+  justify-content: flex-start;
+}
+
+.cb-msg--user {
+  justify-content: flex-end;
+}
+
+/* BUBORÉKOK */
+.cb-bubble {
+  max-width: 85%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.cb-msg--bot .cb-bubble {
+  background: #16213e;
+  color: #d0d0e8;
+  border-bottom-left-radius: 4px;
+}
+
+.cb-msg--user .cb-bubble {
+  background: #fa8c16;
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+/* ADAT BUBORÉK */
+.cb-bubble--data {
+  background: #16213e;
+  color: #d0d0e8;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 95%;
+}
+
+.cb-data-title {
+  font-size: 11px;
+  color: #fa8c16;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 4px;
+}
+
+/* TARTÁLY SOROK */
+.cb-tank-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #2d2d4e;
+  font-size: 12px;
+}
+
+.cb-tank-row:last-child {
+  border-bottom: none;
+}
+
+.cb-tank-nev {
+  color: #fff;
+  font-weight: 600;
+}
+
+.cb-tank-anyag {
+  color: #8888aa;
+  font-size: 11px;
+}
+
+.cb-tank-aktualis {
+  color: #d0d0e8;
+}
+
+.cb-tank-kapacitas {
+  color: #555577;
+  font-size: 11px;
+}
+
+.cb-tank-pct {
+  font-weight: 700;
+  font-size: 12px;
+  min-width: 36px;
+  text-align: right;
+}
+
+/* INPUT */
+.cb-input {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #2d2d4e;
+  background: #16213e;
+}
+
+.cb-input .ant-input {
+  background: #0f0f23;
+  border-color: #2d2d4e;
+  color: #d0d0e8;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.cb-input .ant-input:focus {
+  border-color: #fa8c16;
+  box-shadow: 0 0 0 2px rgba(250, 140, 22, 0.15);
+}
+
+.cb-input .ant-btn-primary {
+  background: #fa8c16;
+  border-color: #fa8c16;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.cb-input .ant-btn-primary:hover {
+  background: #d46b08;
+  border-color: #d46b08;
+}
+
+.db-layout {
+  display: flex;
+  height: 100%;
+  gap: 0;
+}
+
+.db-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.db-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  height: 100%;
+}
